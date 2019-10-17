@@ -87,9 +87,6 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 500px) {
-	h1 {
-		color: red;
-	}
 
 	.content-box img {
 		display: none;
@@ -99,6 +96,20 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
+
+	nav a {
+		border-bottom: 1px solid black;
+	}
+
+	.content-box {
+		max-width: 100%;
+	}
+	
+	  .lower-box {
+		max-width: 100%;
+	  }
+
+
 }
 
 .nav {
@@ -158,9 +169,11 @@ hr {
 	display: inline-block;
   }
 
-.top-section {
-	/* border: 2px solid red; */
-}
+  .content-box2 {
+	  display: flex;
+	  flex-direction: row;
+	  
+  }
 
   .lower-box {
 	/* border: 2px solid blue; */
@@ -168,6 +181,11 @@ hr {
 	padding: 5px;
 	width: 330px;
 	display: inline-block;
+  }
+
+  .lower-box2 {
+	display: flex;
+	flex-direction: row;
   }
 
   .middle img {
@@ -184,8 +202,4 @@ hr {
   .copyright {
 	  display: block;
 	  text-align: center;
-  }
-
-  .middle-img {
-	  width: 800px;
   }
