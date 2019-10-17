@@ -72,45 +72,6 @@ h1, h2, h3, h4, h5 {
 	max-width: 1100px;
 }
 
-@media (max-width: 800px) {
-	h1 {
-		color: blue;
-	}
-
-	nav {
-		max-width: 600px;
-	}
-
-	.content-box img {
-		display: none;
-	}
-}
-
-@media (max-width: 500px) {
-
-	.content-box img {
-		display: none;
-	}
-
-	nav {
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
-	nav a {
-		border-bottom: 1px solid black;
-	}
-
-	.content-box {
-		max-width: 100%;
-	}
-	
-	  .lower-box {
-		max-width: 100%;
-	  }
-
-
-}
 
 .nav {
 	display: flex;
@@ -203,3 +164,42 @@ hr {
 	  display: block;
 	  text-align: center;
   }
+
+  
+@media (max-width: 800px) {
+
+	nav {
+		max-width: 600px;
+	}
+
+	.content-box img {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+
+	.content-box img {
+		display: none;
+	}
+
+	nav {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	nav a {
+		border-bottom: 1px solid black;
+		width: 500px;
+		text-align: center;
+	}
+
+	.content-box2 {
+		flex-direction: column;
+	}
+
+	.lower-box2 {
+		flex-direction: column;
+	}
+
+}
